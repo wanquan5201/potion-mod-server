@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "potion_mod_server",
+	"version": "1.21",
+	"name": "Potion Mod Server",
+	"description": "Server-side support for Potion Mod",
+	"authors": [
+		"wanquan5201"
+	],
+	"contact": {
+		"homepage": "https://github.com/wanquan5201",
+		"sources": "https://github.com/wanquan5201/potion-mod-server"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/potionmodserver/icon.png",
+	"environment": "server",
+	"entrypoints": {
+		"server": [
+			"com.wanquan5201.potionmodserver.PotionModServer"
+		]
+	},
+	"mixins": [
+		"potionmodserver.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
